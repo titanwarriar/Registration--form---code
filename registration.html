@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      max-width: 300px;
+      margin: 20px auto;
+    }
+
+    label,
+    input {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <body>
+    <form id="registrationForm">
+      <h2>Registration</h2>
+      <label for="regUsername">Username:</label>
+      <input type="text" id="regUsername" name="regUsername" required />
+
+      <label for="regPassword">Password:</label>
+      <input type="password" id="regPassword" name="regPassword" required />
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input
+        forget="password"
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        forget="confirmPassword"
+        required
+      />
+
+      <input type="submit" value="Register" />
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
